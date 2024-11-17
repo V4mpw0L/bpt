@@ -1,0 +1,248 @@
+[
+    {
+        "id": "map1",
+        "name": "Estrada dos Ventos",
+        "description": "Uma floresta mística cheia de segredos.",
+        "image": "./img/mapas/estradadosventos.png"
+    },
+    {
+        "id": "map2",
+        "name": "Vale Tranquilo",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/valetranquilo.png"
+    },
+    {
+        "id": "map3",
+        "name": "Floresta Bamboo",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/florestabamboo.png"
+    },
+    {
+        "id": "map4",
+        "name": "Floresta das Ilusoes",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/florestadasilusoes.png"
+    },
+    {
+        "id": "map4",
+        "name": "Mata das Acacias",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/matadasacacias.png"
+    },
+    {
+        "id": "map5",
+        "name": "Floresta dos Espiritos",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/florestadosespiritos.png"
+    },
+    {
+        "id": "map6",
+        "name": "Refugio dos Ancioes",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/refugiodosancioes.png"
+    },
+    {
+        "id": "map6",
+        "name": "Castelo dos Perdidos",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/castelodosperdidos.png"
+    },
+    {
+        "id": "map7",
+        "name": "Vila Ruinen",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/vilaruinen.png"
+    },
+    {
+        "id": "map8",
+        "name": "Terra Maldita",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/terramaldita.png"
+    },
+    {
+        "id": "map9",
+        "name": "Terra Esquecida",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/terraesquecida.png"
+    },
+    {
+        "id": "map10",
+        "name": "Oasis",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/oasis.png"
+    },
+    {
+        "id": "map11",
+        "name": "Calabouco Antigo 1-Andar",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/calabouco1.png"
+    },
+    {
+        "id": "map12",
+        "name": "Calabouco Antigo 2-Andar",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/calabouco2.png"
+    },
+    {
+        "id": "map13",
+        "name": "Calabouco Antigo 3-Andar",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/calabouco3.png"
+    },
+    {
+        "id": "map14",
+        "name": "Campo de Batalha dos Ancioes",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/campodebatalhadosancioes.png"
+    },
+    {
+        "id": "map15",
+        "name": "Terra Proibida",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/terraproibida.png"
+    },
+    {
+        "id": "map16",
+        "name": "Caverna dos Cogumelos",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/cavernadoscogumelos.png"
+    },
+    {
+        "id": "map17",
+        "name": "Caverna das Abelhas",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/cavernadasabelhas.png"
+    },
+    {
+        "id": "map18",
+        "name": "Santuario Sombrio",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/santuariosombrio.png"
+    },
+    {
+        "id": "map19",
+        "name": "Lago da Ganancia",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/lagodaganancia.png"
+    },
+    {
+        "id": "map20",
+        "name": "Templo Maldito 1-Andar (S1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/templomaldito1.png"
+    },
+    {
+        "id": "map21",
+        "name": "Templo Maldito 2-Andar (S2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/templomaldito2.png"
+    },
+    {
+        "id": "map22",
+        "name": "Templo Maldito 3-Andar (S3)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/templomaldito3.png"
+    },
+    {
+        "id": "map23",
+        "name": "Estrada de Ferro do Caos (Iron 1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/estradadeferrodocaos.png"
+    },
+    {
+        "id": "map24",
+        "name": "Coracao de Perum (Iron 2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/coracaodeperum.png"
+    },
+    {
+        "id": "map25",
+        "name": "Vale Gallubia (Ice 1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/valegallubia.png"
+    },
+    {
+        "id": "map26",
+        "name": "Santuario Congelado (Ice 2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/santuariocongelado.png"
+    },
+    {
+        "id": "map27",
+        "name": "Ilha Perdida (Lost 1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/ilhaperdida.png"
+    },
+    {
+        "id": "map28",
+        "name": "Templo Perdido (Lost 2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/temploperdido.png"
+    },
+    {
+        "id": "map29",
+        "name": "Torre sem Fim 1-Andar (ET1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/torresemfim1.png"
+    },
+    {
+        "id": "map30",
+        "name": "Torre sem Fim 2-Andar (ET2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/torresemfim2.png"
+    },
+    {
+        "id": "map31",
+        "name": "Torre sem Fim 3-Andar (ET3)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/torresemfim3.png"
+    },
+    {
+        "id": "map32",
+        "name": "Mina de Gelo 1-Andar",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/minadegelo1.png"
+    },
+    {
+        "id": "map33",
+        "name": "Laboratorio Secreto",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/laboratoriosecreto.png"
+    },
+    {
+        "id": "map34",
+        "name": "Arma Antiga",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/armaantiga.png"
+    },
+    {
+        "id": "map35",
+        "name": "Estrada Sombria",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/estradasombria.png"
+    },
+    {
+        "id": "map36",
+        "name": "Abismo do Mar (AB1)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/abismodomar.png"
+    },
+    {
+        "id": "map37",
+        "name": "Abismo do Mar Congelado (AB2)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/abismodomar.png"
+    },
+    {
+        "id": "map38",
+        "name": "Santuario do Abismo (AB3)",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/santuariodoabismo.png"
+    },
+    {
+        "id": "map39",
+        "name": "Coracao de Fogo",
+        "description": "A treacherous dungeon filled with monsters.",
+        "image": "./img/mapas/coracaodefogo.png"
+    }
+]

@@ -1,0 +1,338 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b1f1d;
+    color: #f3efe2;
+    font-family: 'MedievalSharp', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    text-align: center;
+    
+    
+}
+
+
+/* Header */
+header {
+    background-color: #4c3d34;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #7a6a5f;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%; /* Full width of its container */
+    max-width: 800px; /* Ensures a fixed maximum width */
+    height: 100px; /* Fixed height for consistency */
+    object-fit: cover; /* Crops or fits the image while maintaining aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    margin-top: 10px; /* Adds spacing above the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+
+}
+
+
+/* Style for h2 tags */
+h2 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: #d4af37; /* Adjust the text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+    margin-bottom: 20px; /* Adds some space below the heading */
+    font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 5px 5px; /* Adds padding around the buttons */
+}
+
+/* Style for h2 tags */
+h3 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #ebdd1a; /* Adjust the text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+    margin-bottom: 20px; /* Adds some space below the heading */
+    font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 5px 5px; /* Adds padding around the buttons */
+}
+
+/* Paragraph with Shadow */
+p {
+    font-size: 1rem;
+    color: #f3efe2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Horizontal shadow, vertical shadow, blur radius, color */
+    color: #eeece7; /* Adjust the text color */
+    font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
+    padding: 5px 5px; /* Adds padding around the buttons */
+
+}
+
+
+/* Navigation Menu */
+nav {
+    background-color: #3b2e2b;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of content */
+}
+
+/* Navigation Container */
+.nav-container {
+    display: inline-flex; /* Change to inline-flex to fit within the nav */
+    gap: 15px;
+    white-space: nowrap; /* Prevent wrapping of content */
+    padding: 10px 20px; /* Adds padding around the buttons */
+    
+}
+
+
+
+
+/* Buttons */
+nav a {
+    color: #f3efe2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border: 2px solid #7a6a5f;
+    border-radius: 8px;
+    transition: all 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+nav a:hover {
+    background-color: #5d4c48;
+    color: #d4af37;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+    background-color: #4c3d34;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+/* Grid Layout for Maps and Quests */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between cards */
+    justify-content: center;
+    margin: 0 auto; /* Centers the grid container */
+    
+}
+
+.grid-item, .quest-item {
+    background-color: #4c3d34;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item img, .quest-item img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.grid-item h3, .quest-item h3 {
+    font-size: 1.2rem;
+    color: #d4af37;
+    margin: 10px 0;
+    
+}
+
+ol li {
+    list-style-type: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */ margin-bottom: 20px; /* Adds some space below the heading */ font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px 5px; /* Adds padding around the buttons */
+
+  }
+
+.quest-item button {
+    background-color: #5d4c48;
+    color: #f3efe2;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+}
+
+.quest-item button:hover {
+    background-color: #d4af37;
+    color: #3b2e2b;
+}
+
+/* Quest Detail View */
+.quest-detail {
+    background-color: #4c3d34;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quest-detail img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 100%; /* Full width of its container */
+    max-width: 300px; /* Ensures a fixed maximum width */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crops or fits the image while maintaining aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    margin-bottom: 15px; /* Adds spacing below the image */
+    
+}
+
+.quest-detail ol {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.quest-detail button {
+    background-color: #5d4c48;
+    color: #f3efe2;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+
+}
+
+.quest-detail button:hover {
+    background-color: #d4af37;
+    color: #3b2e2b;
+}
+
+/* Updates Section */
+#posts {
+    margin-top: 20px;
+    background-color: #3b2e2b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#posts h3 {
+    color: #d4af37;
+}
+
+.post {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #4c3d34;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #7a6a5f;
+}
+
+/* Modal for Image Display */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background-color: #3b2e2b;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #c2b8b2;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "id": "quest1",
+        "name": "Quests da Instrutora Amanda",
+        "steps": [
+            "• Converse com a Instrutora Amanda na cidade de Ricarten ou Pillai, a mesma irá requisitar a sua ajuda para entregar um bolo ao vigia do armazém, o Vigia Arent (para os Tempskron) ou a Vigia Lavendar (para os Morions), após aceitar o desafio, o item em questão irá para o seu Inventário de Quests para que possa ser entregue.",
+            "• Entregue o bolo ao Vigia e volte a conversar novamente com a Instrutura Amanda para receber a sua recompensa."
+        ],
+        "image": "./img/quests/amanda.png"
+    },
+    {
+        "id": "quest2",
+        "name": "Quest do Level 20 - 1° Desafio de Classe",
+        "steps": [
+            "Find the lost key.",
+            "Unlock the hidden door.",
+            "Defeat the Dungeon Lord."
+        ],
+        "image": "./img/quests/quest2.jpg"
+    }
+]
