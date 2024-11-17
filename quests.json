@@ -3,8 +3,36 @@
         "id": "quest1",
         "name": "Quests da Instrutora Amanda",
         "steps": [
+            "O VIGIA EXAUSTO",
             "• Converse com a Instrutora Amanda na cidade de Ricarten ou Pillai, a mesma irá requisitar a sua ajuda para entregar um bolo ao vigia do armazém, o Vigia Arent (para os Tempskron) ou a Vigia Lavendar (para os Morions), após aceitar o desafio, o item em questão irá para o seu Inventário de Quests para que possa ser entregue.",
-            "• Entregue o bolo ao Vigia e volte a conversar novamente com a Instrutura Amanda para receber a sua recompensa."
+            "• Entregue o bolo ao Vigia e volte a conversar novamente com a Instrutura Amanda para receber a sua recompensa.",
+
+            "MARCAS DO MEDO",
+            "• Converse com a Instrutora Amanda na cidade de Ricarten ou Pillai, a mesma irá requisitar a sua ajuda para caçar Hopi ou Coelho.",
+            "• Cace 5 Hopis (para os Tempskron) no mapa Jardim da Liberdade ou 5 Coelhos (para os Morions) no mapa Estrada dos Ventos e volte a conversar novamente com a Instrutura Amanda para receber a sua recompensa.",
+
+            "ENTREGA DE DOCES",
+            "• Converse com a Instrutora Amanda na cidade de Ricarten ou Pillai, a mesma irá requisitar a sua ajuda para entregar um doce ao ferreiro, o Ferreiro Goden (para os Tempskron) ou o Ferreiro Bartz (para os Morions). Após aceitar o desafio, o item em questão irá para o seu Inventário de Quests para que possa ser entregue.",
+            "• Entregue o doce ao Ferreiro para receber a sua recompensa.",
+
+            "COLINA DOS DUENDES",
+            "• Converse com a Instrutora Amanda, a mesma irá requisitar a sua ajuda para caçar Duende Macabro ou Duende Selvagem.",
+            "• Cace 5 Duendes Macabros (para os Tempskron) no mapa Jardim da Liberdade ou 5 Duendes Selvagens (para os Morions) no mapa Estrada dos Ventos e fale com o Guarda de Ricarten (para os Tempskrons) ou o Guarda de Pillai (para os Morions), na saída da cidade, para receber a sua recompensa.",
+
+            "AMEACA IMORTAL",
+            "• Converse com a Instrutora Amanda na cidade de Ricarten ou Pillai, a mesma irá requisitar a sua ajuda para caçar Esqueleto do Mal ou Esqueleto.",
+            "• Cace 10 Esqueletos do Mal (para os Morions) no mapa Floresta dos Espíritos ou 10 Esqueletos (para os Tempskron) no mapa Refúgio dos Anciões e fale com o Ferreiro Ruga, em Vila Ruinen, para receber a sua recompensa.",
+
+            "DESAFIO CICLOPE",
+            "• Converse com a Instrutora Amanda, a mesma irá requisitar a sua ajuda para caçar Ciclope.",
+            "• Cace 10 Cíclopes no mapa Terra Maldita e fale com a Instrutura Amanda para receber a sua recompensa.",
+
+            "O MARTELO PERDIDO",
+            "• Converse com a Instrutora Amanda, a mesma irá requisitar a sua ajuda para recuperar o martelo perdido do Ferreiro Umph, roubado pelos Bargon.",
+            "• Cace Bargons na cidade de Navisko, até encontrar o Martelo Umph e entregue-o ao Ferreiro Umph, em Navisko, para receber a sua recompensa. Assim que dropado o item irá, automaticamente, para o inventário de Quests do seu personagem."
+
+            
+
         ],
         "image": "./img/quests/amanda.png"
     },
@@ -12,10 +40,21 @@
         "id": "quest2",
         "name": "Quest do Level 20 - 1° Desafio de Classe",
         "steps": [
-            "Find the lost key.",
-            "Unlock the hidden door.",
-            "Defeat the Dungeon Lord."
+            "TEMPSKRONS",
+            "• Converse com o Mestre Verkan na cidade de Ricarten, o mesmo irá requisitar que você traga as três partes dos Wolverines: O Chifre, a Garra e a Cauda.",
+            "• Consiga a Garra caçando o Wolverine de Bronze no mapa Floresta Bamboo, a Chifre pode ser obtida caçando o Wolverine Prateado e o Cauda caçando o Wolverine Dourado, ambos no mapa Mata das Acácias. Assim que dropado o item irá, automaticamente, para o inventário de Quests do seu personagem. Leve os itens solicitados ao Mestre Verkan na cidade de Ricarten para concluir o desafio de classe.",
+
+            "MORIONS",
+            "DESAFIO 1",
+            "• Converse com o Mestre Raymon na cidade de Pillai, o mesmo irá requisitar que você vá falar com o Ferreiro Dfrain, na mesma cidade. ",
+            "• Converse com o Ferreiro Dfrain, o mesmo lhe entregará uma Garrafa e irá requisitar que você o ajude a produzir um óleo especial para resolver seu problema capilar. Após aceitar o desafio, o item em questão irá para o seu Inventário de Quests para que, mais tarde, possa ser usado na produção do óleo. Serão necessários 7 Óleos Místicos, que podem ser obtidos caçando Árvores Demoníacas no mapa Floresta dos Espíritos, para produção do óleo. Assim que dropado o item irá, automaticamente, para o inventário de Quests do seu personagem. Leve a Garrafa e os 7 Óleos Místicos até o Moriph localizado na cidade de Pillai e realize o processo de Aging na garrafa usando os óleos, para criar o Tônico Capilar. ",
+            "• Entregue o Óleo Místico ao Ferreiro Dfrain e fale com o Mestre Raymon para concluir o desafio de classe. ",
+            "DESAFIO 2",
+            "• Converse com o Mestre Raymon na cidade de Pillai, o mesmo irá requisitar que você vá falar com a Vovó Molly, na mesma cidade.",
+            "• Converse com a Vovó Molly, a mesma lhe entregará uma Garrafa e irá requisitar que você a ajude a produzir uma geleia real. Após aceitar o desafio, o item em questão irá para o seu Inventário de Quests para que, mais tarde, possa ser usado na produção da geleia. Serão necessários 9 Mels, que podem ser obtidos caçando Cão Abelha no mapa Floresta dos Espíritos, para produção da geleia. Assim que dropado o item irá, automaticamente, para o inventário de Quests do seu personagem. Leve a Garrafa e os 9 Mels até o Moriph localizado na cidade de Pillai e realize o processo de Aging na garrafa usando os Mels, para criar a Geleia Real.",
+            "• Entregue a Geléia Real à Vovó Molly e fale com o Mestre Raymon para concluir o desafio de classe."
+
         ],
-        "image": "./img/quests/quest2.jpg"
+        "image": "./img/quests/desafiodeclasse.png"
     }
 ]
