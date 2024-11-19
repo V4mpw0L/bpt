@@ -22,48 +22,76 @@ window.onclick = function(event) {
     }
 }
 
-// Load Maps
+window.addEventListener('keydown', (event) => {
+    const modal = document.getElementById('imageModal');
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+        closeModal();
+    }
+});
+
+// Open a modal with more details (optional)
+function openDetailModal(title, image, description) {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = "block";
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = image;
+    modalImage.alt = title;
+    // Optionally display a description in the modal if desired
+}
+
+// Improved error handling
 function loadMaps() {
+    const mapsGrid = document.getElementById('maps-grid');
+    mapsGrid.innerHTML = '<p>Loading maps...</p>';
     fetch('maps.json')
         .then((response) => response.json())
         .then((maps) => {
-            const mapsGrid = document.getElementById('maps-grid');
-            mapsGrid.innerHTML = ''; // Clear previous content
+            mapsGrid.innerHTML = ''; // Clear loading spinner
             maps.forEach((map) => {
                 const mapCard = document.createElement('div');
                 mapCard.className = 'grid-item';
-                mapCard.onclick = () => openModal(map.image); // Add click event to open modal
+                mapCard.onclick = () => openModal(map.image);
                 mapCard.innerHTML = `
-                    <img src="${map.image}" alt="${map.name}">
+                    <img src="${map.image}" alt="${map.name}" loading="lazy">
                     <h3>${map.name}</h3>
                     <p>${map.description}</p>
                 `;
                 mapsGrid.appendChild(mapCard);
             });
+        })
+        .catch((error) => {
+            console.error('Error loading maps:', error); // Log error for debugging
+            mapsGrid.innerHTML = '<p>Failed to load maps. Please try again later.</p>';
         });
 }
 
-// Load Quests
+// Load quests dynamically
 function loadQuests() {
+    const questsGrid = document.getElementById('quests-grid');
+    questsGrid.innerHTML = '<p>Loading quests...</p>'; // Spinner
     fetch('quests.json')
         .then((response) => response.json())
         .then((quests) => {
-            const questsGrid = document.getElementById('quests-grid');
-            questsGrid.innerHTML = ''; // Clear previous content to avoid duplication
+            questsGrid.innerHTML = ''; // Clear spinner
             quests.forEach((quest) => {
                 const questCard = document.createElement('div');
                 questCard.className = 'quest-item';
                 questCard.innerHTML = `
-                    <img src="${quest.image}" alt="${quest.name}">
+                    <img src="${quest.image}" alt="${quest.name}" loading="lazy">
                     <h3>${quest.name}</h3>
-                    <button onclick="viewQuestDetails('${quest.id}')">Ver Detalhes</button>
+                    <button onclick="viewQuestDetails('${quest.id}')" aria-label="View details for ${quest.name}">
+                        View Details
+                    </button>
                 `;
                 questsGrid.appendChild(questCard);
             });
+        })
+        .catch(() => {
+            questsGrid.innerHTML = '<p>Failed to load quests. Please try again later.</p>'; // Error fallback
         });
 }
 
-// View Quest Details
+// View quest details
 function viewQuestDetails(questId) {
     fetch('quests.json')
         .then((response) => response.json())
@@ -71,26 +99,32 @@ function viewQuestDetails(questId) {
             const quest = quests.find((q) => q.id === questId);
             if (quest) {
                 const questsGrid = document.getElementById('quests-grid');
-                questsGrid.innerHTML = ''; // Clear grid for details view
                 questsGrid.innerHTML = `
                     <div class="quest-detail">
                         <h3>${quest.name}</h3>
                         <img src="${quest.image}" alt="${quest.name}">
-                        <ol>${quest.steps.map((step) => `<li>${step}</li>`).join('')}</ol>
-                        <button onclick="loadQuests()">Voltar para Quests</button>
+                        <ol>
+                            ${quest.steps.map((step) => `<li>${step}</li>`).join('')}
+                        </ol>
+                        <button onclick="loadQuests()" aria-label="Back to quests">Back to Quests</button>
                     </div>
                 `;
             }
+        })
+        .catch(() => {
+            const questsGrid = document.getElementById('quests-grid');
+            questsGrid.innerHTML = '<p>Failed to load quest details. Please try again later.</p>'; // Error fallback
         });
 }
 
-// Load Updates
+// Load updates dynamically
 function loadUpdates() {
+    const postList = document.getElementById('post-list');
+    postList.innerHTML = '<p>Loading updates...</p>'; // Spinner
     fetch('updates.json')
         .then((response) => response.json())
         .then((updates) => {
-            const postList = document.getElementById('post-list');
-            postList.innerHTML = ''; // Clear previous content
+            postList.innerHTML = ''; // Clear spinner
             updates.forEach((update) => {
                 const post = document.createElement('div');
                 post.className = 'post';
@@ -101,6 +135,9 @@ function loadUpdates() {
                 `;
                 postList.appendChild(post);
             });
+        })
+        .catch(() => {
+            postList.innerHTML = '<p>Failed to load updates. Please try again later.</p>'; // Error fallback
         });
 }
 
