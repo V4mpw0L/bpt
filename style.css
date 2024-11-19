@@ -20,8 +20,6 @@ body {
     max-width: 1200px;
     margin-top: 20px;
     text-align: center;
-    
-    
 }
 
 
@@ -34,7 +32,6 @@ header {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    
 }
 
 /* Banner Image */
@@ -46,7 +43,6 @@ header {
     border-radius: 8px; /* Adds rounded corners */
     margin-top: 10px; /* Adds spacing above the image */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -54,7 +50,6 @@ header h1 {
     font-size: 2.5rem;
     color: #d4af37;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
-
 }
 
 
@@ -90,9 +85,7 @@ p {
     color: #eeece7; /* Adjust the text color */
     font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
     padding: 5px 5px; /* Adds padding around the buttons */
-
 }
-
 
 /* Navigation Menu */
 nav {
@@ -102,6 +95,9 @@ nav {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent wrapping of content */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 /* Navigation Container */
@@ -110,11 +106,7 @@ nav {
     gap: 15px;
     white-space: nowrap; /* Prevent wrapping of content */
     padding: 10px 20px; /* Adds padding around the buttons */
-    
 }
-
-
-
 
 /* Buttons */
 nav a {
@@ -126,7 +118,6 @@ nav a {
     border-radius: 8px;
     transition: all 0.3s;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    
 }
 
 nav a:hover {
@@ -143,7 +134,6 @@ nav a:hover {
     margin: 20px auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 800px;
-    
 }
 
 .hidden {
@@ -157,7 +147,6 @@ nav a:hover {
     gap: 15px; /* Space between cards */
     justify-content: center;
     margin: 0 auto; /* Centers the grid container */
-    
 }
 
 .grid-item, .quest-item {
@@ -173,14 +162,12 @@ nav a:hover {
     object-fit: cover;
     border-radius: 8px 8px 0 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .grid-item h3, .quest-item h3 {
     font-size: 1.2rem;
     color: #d4af37;
     margin: 10px 0;
-    
 }
 
 ol li {
@@ -188,7 +175,6 @@ ol li {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */ margin-bottom: 20px; /* Adds some space below the heading */ font-family: 'MedievalSharp', serif; /* Use a medieval-looking font */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 5px 5px; /* Adds padding around the buttons */
-
   }
 
 .quest-item button {
@@ -226,13 +212,11 @@ ol li {
     object-fit: cover; /* Crops or fits the image while maintaining aspect ratio */
     border-radius: 8px; /* Adds rounded corners */
     margin-bottom: 15px; /* Adds spacing below the image */
-    
 }
 
 .quest-detail ol {
     text-align: center;
     margin: 20px 0;
-    
 }
 
 .quest-detail button {
@@ -245,7 +229,6 @@ ol li {
     transition: background-color 0.3s;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
-
 }
 
 .quest-detail button:hover {
@@ -275,26 +258,29 @@ ol li {
     border: 1px solid #7a6a5f;
 }
 
-/* Modal for Image Display */
+/* Modal overlay styles */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 2000; /* Higher than the navigation bar */
+    padding-top: 100px; /* Space between top of the screen and modal content */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
 }
 
+/* Modal content styles */
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
     max-width: 700px;
+    width: 80%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
 }
 
 .modal-content, #caption {  
@@ -307,13 +293,15 @@ ol li {
     to {transform: scale(1)}
 }
 
+/* Close button styles */
 .close {
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    z-index: 2001; /* Ensure it's above the modal */
     transition: 0.3s;
 }
 
@@ -323,7 +311,6 @@ ol li {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /* Footer */
 footer {
@@ -335,4 +322,21 @@ footer {
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer ul {
+   background-image: linear-gradient(to bottom, #FFD700, white, black);
+    border-radius: 10px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #222;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;    ; /* Add shadow */
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* Add shadow */
 }
