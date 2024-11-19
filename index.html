@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./img/ favicon-16x16.png">
     <title>Priston Tale - Medieval RPG Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +14,8 @@
         <!-- Header -->
         <header>
             <h1>Priston Tale - Adventure Awaits!</h1>
-            <img src="./img/logos/logo1.png" alt="Logo Image" class="banner-image">
+            <img src="./img/logos/logo1.png" alt="Logo Image" class="banner-image" loading="lazy"  >
         </header>
-
         <!-- Navigation Menu -->
         <nav>
             <div class="nav-container">
@@ -23,22 +25,19 @@
                 <a href="#quests" class="nav-link" onclick="showPage('quests')">Quests</a>
                 <a href="#monsters" class="nav-link" onclick="showPage('monsters')">Monstros</a>
                 <a href="#itens" class="nav-link" onclick="showPage('itens')">Itens</a>
-
             </div>
         </nav>
-
-<!-- Modal for Image Display -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-</div>
-
-
+        <!-- Modal for Image Display -->
+       <div id="imageModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+       </div>
+       
         <!-- Content Section -->
         <div id="home" class="content">
             <h2>Bem-Vindo ao Priston Tale</h2>
             <p>Embarque em uma jornada medieval cheia de missões, artefatos poderosos e terras misteriosas. Explore mapas, encontre aliados e derrote seus inimigos!<p>
-        
+              
             <!-- Posts Section -->
             <section id="posts">
                 <h3>Atualizações Diárias</h3>
@@ -49,7 +48,7 @@
         </div>
 
         <div id="maps" class="content hidden">
-            <img src="./img/mapas/mapas.png" alt="Logo Image" class="banner-image">
+            <img src="./img/mapas/mapas.png" alt="Logo Image" class="banner-image" loading="lazy"  >
             <h2>Mapas</h2>
             <p>Escolha seu guerreiro! Cada personagem tem habilidades e pontos fortes únicos. Domine-os para se tornar o herói supremo.</p>
             <div id="maps-grid" class="grid-container">
@@ -58,13 +57,13 @@
         </div>
 
         <div id="characters" class="content hidden">
-            <img src="./img/personagens/personagens.png" alt="Logo Image" class="banner-image">
+            <img src="./img/personagens/personagens.png" alt="Logo Image" class="banner-image" loading="lazy"  >
             <h2>Personagens</h2>
             <p>Escolha seu guerreiro! Cada personagem tem habilidades e pontos fortes únicos. Domine-os para se tornar o herói supremo.</p>
         </div>
 
         <div id="quests" class="content hidden">
-            <img src="./img/quests/quests.png" alt="Logo Image" class="banner-image">
+            <img src="./img/quests/quests.png" alt="Logo Image" class="banner-image" loading="lazy"  >
             <h2>Quests</h2>
             <p>Escolha seu guerreiro! Cada personagem tem habilidades e pontos fortes únicos. Domine-os para se tornar o herói supremo.</p>
             <div id="quests-grid" class="grid-container">
@@ -73,23 +72,27 @@
         </div>
 
         <div id="monsters" class="content hidden">
-            <img src="./img/monstros/monstros.png" alt="Logo Image" class="banner-image">
+            <img src="./img/monstros/monstros.png" alt="Logo Image" class="banner-image" loading="lazy"  >
             <h2>Monstros</h2>
             <p>Mantenha o controle de suas armas, armaduras e poções. Gerenciar seu inventário de forma eficaz é a chave para sobreviver em Priston Tale.</p>
         </div>
 
         <div id="itens" class="content hidden">
-            <img src="./img/itens/itens2.png" alt="Logo Image" class="banner-image">
+            <img src="./img/itens/itens2.png" alt="Logo Image" class="banner-image" loading="lazy"  >
             <h2>Itens</h2>
             <p>Mantenha o controle de suas armas, armaduras e poções. Gerenciar seu inventário de forma eficaz é a chave para sobreviver em Priston Tale.</p>
             <div id="itens-grid" class="grid-container">
                 <!-- Itens will be dynamically loaded here -->
             </div>
         </div>
-
         <!-- Footer -->
         <footer>
             <p>&copy; 2024 Priston Tale Fan Site. All rights reserved.</p>
+            <ul>
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="index.html">Contact Us</a></li>
+             <li><a href="index.html">Privacy Policy</a></li>
+            </ul>
         </footer>
     </div>
     <script src="script.js"></script>
